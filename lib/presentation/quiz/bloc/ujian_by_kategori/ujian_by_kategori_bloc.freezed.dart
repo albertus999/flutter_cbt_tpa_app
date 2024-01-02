@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'login_bloc.dart';
+part of 'ujian_by_kategori_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,58 +15,59 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$LoginEvent {
+mixin _$UjianByKategoriEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(LoginRequestModel data) login,
+    required TResult Function(String kategori) getUjianByKategori,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(LoginRequestModel data)? login,
+    TResult? Function(String kategori)? getUjianByKategori,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(LoginRequestModel data)? login,
+    TResult Function(String kategori)? getUjianByKategori,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Login value) login,
+    required TResult Function(_GetUjianByKategori value) getUjianByKategori,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Login value)? login,
+    TResult? Function(_GetUjianByKategori value)? getUjianByKategori,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Login value)? login,
+    TResult Function(_GetUjianByKategori value)? getUjianByKategori,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoginEventCopyWith<$Res> {
-  factory $LoginEventCopyWith(
-          LoginEvent value, $Res Function(LoginEvent) then) =
-      _$LoginEventCopyWithImpl<$Res, LoginEvent>;
+abstract class $UjianByKategoriEventCopyWith<$Res> {
+  factory $UjianByKategoriEventCopyWith(UjianByKategoriEvent value,
+          $Res Function(UjianByKategoriEvent) then) =
+      _$UjianByKategoriEventCopyWithImpl<$Res, UjianByKategoriEvent>;
 }
 
 /// @nodoc
-class _$LoginEventCopyWithImpl<$Res, $Val extends LoginEvent>
-    implements $LoginEventCopyWith<$Res> {
-  _$LoginEventCopyWithImpl(this._value, this._then);
+class _$UjianByKategoriEventCopyWithImpl<$Res,
+        $Val extends UjianByKategoriEvent>
+    implements $UjianByKategoriEventCopyWith<$Res> {
+  _$UjianByKategoriEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -83,7 +84,7 @@ abstract class _$$StartedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$StartedImplCopyWithImpl<$Res>
-    extends _$LoginEventCopyWithImpl<$Res, _$StartedImpl>
+    extends _$UjianByKategoriEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
   __$$StartedImplCopyWithImpl(
       _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
@@ -97,7 +98,7 @@ class _$StartedImpl implements _Started {
 
   @override
   String toString() {
-    return 'LoginEvent.started()';
+    return 'UjianByKategoriEvent.started()';
   }
 
   @override
@@ -113,7 +114,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(LoginRequestModel data) login,
+    required TResult Function(String kategori) getUjianByKategori,
   }) {
     return started();
   }
@@ -122,7 +123,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(LoginRequestModel data)? login,
+    TResult? Function(String kategori)? getUjianByKategori,
   }) {
     return started?.call();
   }
@@ -131,7 +132,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(LoginRequestModel data)? login,
+    TResult Function(String kategori)? getUjianByKategori,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -144,7 +145,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Login value) login,
+    required TResult Function(_GetUjianByKategori value) getUjianByKategori,
   }) {
     return started(this);
   }
@@ -153,7 +154,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Login value)? login,
+    TResult? Function(_GetUjianByKategori value)? getUjianByKategori,
   }) {
     return started?.call(this);
   }
@@ -162,7 +163,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Login value)? login,
+    TResult Function(_GetUjianByKategori value)? getUjianByKategori,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -172,98 +173,100 @@ class _$StartedImpl implements _Started {
   }
 }
 
-abstract class _Started implements LoginEvent {
+abstract class _Started implements UjianByKategoriEvent {
   const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$$LoginImplCopyWith<$Res> {
-  factory _$$LoginImplCopyWith(
-          _$LoginImpl value, $Res Function(_$LoginImpl) then) =
-      __$$LoginImplCopyWithImpl<$Res>;
+abstract class _$$GetUjianByKategoriImplCopyWith<$Res> {
+  factory _$$GetUjianByKategoriImplCopyWith(_$GetUjianByKategoriImpl value,
+          $Res Function(_$GetUjianByKategoriImpl) then) =
+      __$$GetUjianByKategoriImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({LoginRequestModel data});
+  $Res call({String kategori});
 }
 
 /// @nodoc
-class __$$LoginImplCopyWithImpl<$Res>
-    extends _$LoginEventCopyWithImpl<$Res, _$LoginImpl>
-    implements _$$LoginImplCopyWith<$Res> {
-  __$$LoginImplCopyWithImpl(
-      _$LoginImpl _value, $Res Function(_$LoginImpl) _then)
+class __$$GetUjianByKategoriImplCopyWithImpl<$Res>
+    extends _$UjianByKategoriEventCopyWithImpl<$Res, _$GetUjianByKategoriImpl>
+    implements _$$GetUjianByKategoriImplCopyWith<$Res> {
+  __$$GetUjianByKategoriImplCopyWithImpl(_$GetUjianByKategoriImpl _value,
+      $Res Function(_$GetUjianByKategoriImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? data = null,
+    Object? kategori = null,
   }) {
-    return _then(_$LoginImpl(
-      null == data
-          ? _value.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as LoginRequestModel,
+    return _then(_$GetUjianByKategoriImpl(
+      null == kategori
+          ? _value.kategori
+          : kategori // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
 /// @nodoc
 
-class _$LoginImpl implements _Login {
-  const _$LoginImpl(this.data);
+class _$GetUjianByKategoriImpl implements _GetUjianByKategori {
+  const _$GetUjianByKategoriImpl(this.kategori);
 
   @override
-  final LoginRequestModel data;
+  final String kategori;
 
   @override
   String toString() {
-    return 'LoginEvent.login(data: $data)';
+    return 'UjianByKategoriEvent.getUjianByKategori(kategori: $kategori)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LoginImpl &&
-            (identical(other.data, data) || other.data == data));
+            other is _$GetUjianByKategoriImpl &&
+            (identical(other.kategori, kategori) ||
+                other.kategori == kategori));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, data);
+  int get hashCode => Object.hash(runtimeType, kategori);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
-      __$$LoginImplCopyWithImpl<_$LoginImpl>(this, _$identity);
+  _$$GetUjianByKategoriImplCopyWith<_$GetUjianByKategoriImpl> get copyWith =>
+      __$$GetUjianByKategoriImplCopyWithImpl<_$GetUjianByKategoriImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(LoginRequestModel data) login,
+    required TResult Function(String kategori) getUjianByKategori,
   }) {
-    return login(data);
+    return getUjianByKategori(kategori);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(LoginRequestModel data)? login,
+    TResult? Function(String kategori)? getUjianByKategori,
   }) {
-    return login?.call(data);
+    return getUjianByKategori?.call(kategori);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(LoginRequestModel data)? login,
+    TResult Function(String kategori)? getUjianByKategori,
     required TResult orElse(),
   }) {
-    if (login != null) {
-      return login(data);
+    if (getUjianByKategori != null) {
+      return getUjianByKategori(kategori);
     }
     return orElse();
   }
@@ -272,67 +275,71 @@ class _$LoginImpl implements _Login {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Login value) login,
+    required TResult Function(_GetUjianByKategori value) getUjianByKategori,
   }) {
-    return login(this);
+    return getUjianByKategori(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Login value)? login,
+    TResult? Function(_GetUjianByKategori value)? getUjianByKategori,
   }) {
-    return login?.call(this);
+    return getUjianByKategori?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Login value)? login,
+    TResult Function(_GetUjianByKategori value)? getUjianByKategori,
     required TResult orElse(),
   }) {
-    if (login != null) {
-      return login(this);
+    if (getUjianByKategori != null) {
+      return getUjianByKategori(this);
     }
     return orElse();
   }
 }
 
-abstract class _Login implements LoginEvent {
-  const factory _Login(final LoginRequestModel data) = _$LoginImpl;
+abstract class _GetUjianByKategori implements UjianByKategoriEvent {
+  const factory _GetUjianByKategori(final String kategori) =
+      _$GetUjianByKategoriImpl;
 
-  LoginRequestModel get data;
+  String get kategori;
   @JsonKey(ignore: true)
-  _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
+  _$$GetUjianByKategoriImplCopyWith<_$GetUjianByKategoriImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$LoginState {
+mixin _$UjianByKategoriState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function(UjianResponseModel response) success,
     required TResult Function(String message) error,
+    required TResult Function() notfound,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function(UjianResponseModel response)? success,
     TResult? Function(String message)? error,
+    TResult? Function()? notfound,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function(UjianResponseModel response)? success,
     TResult Function(String message)? error,
+    TResult Function()? notfound,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -342,6 +349,7 @@ mixin _$LoginState {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
+    required TResult Function(_Notfound value) notfound,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -350,6 +358,7 @@ mixin _$LoginState {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Notfound value)? notfound,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -358,22 +367,24 @@ mixin _$LoginState {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
+    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoginStateCopyWith<$Res> {
-  factory $LoginStateCopyWith(
-          LoginState value, $Res Function(LoginState) then) =
-      _$LoginStateCopyWithImpl<$Res, LoginState>;
+abstract class $UjianByKategoriStateCopyWith<$Res> {
+  factory $UjianByKategoriStateCopyWith(UjianByKategoriState value,
+          $Res Function(UjianByKategoriState) then) =
+      _$UjianByKategoriStateCopyWithImpl<$Res, UjianByKategoriState>;
 }
 
 /// @nodoc
-class _$LoginStateCopyWithImpl<$Res, $Val extends LoginState>
-    implements $LoginStateCopyWith<$Res> {
-  _$LoginStateCopyWithImpl(this._value, this._then);
+class _$UjianByKategoriStateCopyWithImpl<$Res,
+        $Val extends UjianByKategoriState>
+    implements $UjianByKategoriStateCopyWith<$Res> {
+  _$UjianByKategoriStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -390,7 +401,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -404,7 +415,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'LoginState.initial()';
+    return 'UjianByKategoriState.initial()';
   }
 
   @override
@@ -421,8 +432,9 @@ class _$InitialImpl implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function(UjianResponseModel response) success,
     required TResult Function(String message) error,
+    required TResult Function() notfound,
   }) {
     return initial();
   }
@@ -432,8 +444,9 @@ class _$InitialImpl implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function(UjianResponseModel response)? success,
     TResult? Function(String message)? error,
+    TResult? Function()? notfound,
   }) {
     return initial?.call();
   }
@@ -443,8 +456,9 @@ class _$InitialImpl implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function(UjianResponseModel response)? success,
     TResult Function(String message)? error,
+    TResult Function()? notfound,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -460,6 +474,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
+    required TResult Function(_Notfound value) notfound,
   }) {
     return initial(this);
   }
@@ -471,6 +486,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Notfound value)? notfound,
   }) {
     return initial?.call(this);
   }
@@ -482,6 +498,7 @@ class _$InitialImpl implements _Initial {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
+    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -491,7 +508,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements LoginState {
+abstract class _Initial implements UjianByKategoriState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -504,7 +521,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -518,7 +535,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'LoginState.loading()';
+    return 'UjianByKategoriState.loading()';
   }
 
   @override
@@ -535,8 +552,9 @@ class _$LoadingImpl implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function(UjianResponseModel response) success,
     required TResult Function(String message) error,
+    required TResult Function() notfound,
   }) {
     return loading();
   }
@@ -546,8 +564,9 @@ class _$LoadingImpl implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function(UjianResponseModel response)? success,
     TResult? Function(String message)? error,
+    TResult? Function()? notfound,
   }) {
     return loading?.call();
   }
@@ -557,8 +576,9 @@ class _$LoadingImpl implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function(UjianResponseModel response)? success,
     TResult Function(String message)? error,
+    TResult Function()? notfound,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -574,6 +594,7 @@ class _$LoadingImpl implements _Loading {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
+    required TResult Function(_Notfound value) notfound,
   }) {
     return loading(this);
   }
@@ -585,6 +606,7 @@ class _$LoadingImpl implements _Loading {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Notfound value)? notfound,
   }) {
     return loading?.call(this);
   }
@@ -596,6 +618,7 @@ class _$LoadingImpl implements _Loading {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
+    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -605,7 +628,7 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements LoginState {
+abstract class _Loading implements UjianByKategoriState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -615,12 +638,12 @@ abstract class _$$SuccessImplCopyWith<$Res> {
           _$SuccessImpl value, $Res Function(_$SuccessImpl) then) =
       __$$SuccessImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({AuthResponseModel authResponseModel});
+  $Res call({UjianResponseModel response});
 }
 
 /// @nodoc
 class __$$SuccessImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$SuccessImpl>
+    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$SuccessImpl>
     implements _$$SuccessImplCopyWith<$Res> {
   __$$SuccessImplCopyWithImpl(
       _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
@@ -629,13 +652,13 @@ class __$$SuccessImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? authResponseModel = null,
+    Object? response = freezed,
   }) {
     return _then(_$SuccessImpl(
-      null == authResponseModel
-          ? _value.authResponseModel
-          : authResponseModel // ignore: cast_nullable_to_non_nullable
-              as AuthResponseModel,
+      freezed == response
+          ? _value.response
+          : response // ignore: cast_nullable_to_non_nullable
+              as UjianResponseModel,
     ));
   }
 }
@@ -643,14 +666,14 @@ class __$$SuccessImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$SuccessImpl implements _Success {
-  const _$SuccessImpl(this.authResponseModel);
+  const _$SuccessImpl(this.response);
 
   @override
-  final AuthResponseModel authResponseModel;
+  final UjianResponseModel response;
 
   @override
   String toString() {
-    return 'LoginState.success(authResponseModel: $authResponseModel)';
+    return 'UjianByKategoriState.success(response: $response)';
   }
 
   @override
@@ -658,12 +681,12 @@ class _$SuccessImpl implements _Success {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SuccessImpl &&
-            (identical(other.authResponseModel, authResponseModel) ||
-                other.authResponseModel == authResponseModel));
+            const DeepCollectionEquality().equals(other.response, response));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, authResponseModel);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(response));
 
   @JsonKey(ignore: true)
   @override
@@ -676,10 +699,11 @@ class _$SuccessImpl implements _Success {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function(UjianResponseModel response) success,
     required TResult Function(String message) error,
+    required TResult Function() notfound,
   }) {
-    return success(authResponseModel);
+    return success(response);
   }
 
   @override
@@ -687,10 +711,11 @@ class _$SuccessImpl implements _Success {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function(UjianResponseModel response)? success,
     TResult? Function(String message)? error,
+    TResult? Function()? notfound,
   }) {
-    return success?.call(authResponseModel);
+    return success?.call(response);
   }
 
   @override
@@ -698,12 +723,13 @@ class _$SuccessImpl implements _Success {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function(UjianResponseModel response)? success,
     TResult Function(String message)? error,
+    TResult Function()? notfound,
     required TResult orElse(),
   }) {
     if (success != null) {
-      return success(authResponseModel);
+      return success(response);
     }
     return orElse();
   }
@@ -715,6 +741,7 @@ class _$SuccessImpl implements _Success {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
+    required TResult Function(_Notfound value) notfound,
   }) {
     return success(this);
   }
@@ -726,6 +753,7 @@ class _$SuccessImpl implements _Success {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Notfound value)? notfound,
   }) {
     return success?.call(this);
   }
@@ -737,6 +765,7 @@ class _$SuccessImpl implements _Success {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
+    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -746,11 +775,10 @@ class _$SuccessImpl implements _Success {
   }
 }
 
-abstract class _Success implements LoginState {
-  const factory _Success(final AuthResponseModel authResponseModel) =
-      _$SuccessImpl;
+abstract class _Success implements UjianByKategoriState {
+  const factory _Success(final UjianResponseModel response) = _$SuccessImpl;
 
-  AuthResponseModel get authResponseModel;
+  UjianResponseModel get response;
   @JsonKey(ignore: true)
   _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -767,7 +795,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -797,7 +825,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'LoginState.error(message: $message)';
+    return 'UjianByKategoriState.error(message: $message)';
   }
 
   @override
@@ -822,8 +850,9 @@ class _$ErrorImpl implements _Error {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function(UjianResponseModel response) success,
     required TResult Function(String message) error,
+    required TResult Function() notfound,
   }) {
     return error(message);
   }
@@ -833,8 +862,9 @@ class _$ErrorImpl implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function(UjianResponseModel response)? success,
     TResult? Function(String message)? error,
+    TResult? Function()? notfound,
   }) {
     return error?.call(message);
   }
@@ -844,8 +874,9 @@ class _$ErrorImpl implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function(UjianResponseModel response)? success,
     TResult Function(String message)? error,
+    TResult Function()? notfound,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -861,6 +892,7 @@ class _$ErrorImpl implements _Error {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
+    required TResult Function(_Notfound value) notfound,
   }) {
     return error(this);
   }
@@ -872,6 +904,7 @@ class _$ErrorImpl implements _Error {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Notfound value)? notfound,
   }) {
     return error?.call(this);
   }
@@ -883,6 +916,7 @@ class _$ErrorImpl implements _Error {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
+    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -892,11 +926,131 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements LoginState {
+abstract class _Error implements UjianByKategoriState {
   const factory _Error(final String message) = _$ErrorImpl;
 
   String get message;
   @JsonKey(ignore: true)
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$NotfoundImplCopyWith<$Res> {
+  factory _$$NotfoundImplCopyWith(
+          _$NotfoundImpl value, $Res Function(_$NotfoundImpl) then) =
+      __$$NotfoundImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$NotfoundImplCopyWithImpl<$Res>
+    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$NotfoundImpl>
+    implements _$$NotfoundImplCopyWith<$Res> {
+  __$$NotfoundImplCopyWithImpl(
+      _$NotfoundImpl _value, $Res Function(_$NotfoundImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$NotfoundImpl implements _Notfound {
+  const _$NotfoundImpl();
+
+  @override
+  String toString() {
+    return 'UjianByKategoriState.notfound()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$NotfoundImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(UjianResponseModel response) success,
+    required TResult Function(String message) error,
+    required TResult Function() notfound,
+  }) {
+    return notfound();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(UjianResponseModel response)? success,
+    TResult? Function(String message)? error,
+    TResult? Function()? notfound,
+  }) {
+    return notfound?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(UjianResponseModel response)? success,
+    TResult Function(String message)? error,
+    TResult Function()? notfound,
+    required TResult orElse(),
+  }) {
+    if (notfound != null) {
+      return notfound();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Success value) success,
+    required TResult Function(_Error value) error,
+    required TResult Function(_Notfound value) notfound,
+  }) {
+    return notfound(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Success value)? success,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_Notfound value)? notfound,
+  }) {
+    return notfound?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Success value)? success,
+    TResult Function(_Error value)? error,
+    TResult Function(_Notfound value)? notfound,
+    required TResult orElse(),
+  }) {
+    if (notfound != null) {
+      return notfound(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Notfound implements UjianByKategoriState {
+  const factory _Notfound() = _$NotfoundImpl;
 }

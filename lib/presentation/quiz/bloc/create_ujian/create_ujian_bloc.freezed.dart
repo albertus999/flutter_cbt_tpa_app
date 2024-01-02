@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'login_bloc.dart';
+part of 'create_ujian_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,58 +15,58 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$LoginEvent {
+mixin _$CreateUjianEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(LoginRequestModel data) login,
+    required TResult Function() createUjian,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(LoginRequestModel data)? login,
+    TResult? Function()? createUjian,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(LoginRequestModel data)? login,
+    TResult Function()? createUjian,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Login value) login,
+    required TResult Function(_CreateUjian value) createUjian,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Login value)? login,
+    TResult? Function(_CreateUjian value)? createUjian,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Login value)? login,
+    TResult Function(_CreateUjian value)? createUjian,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoginEventCopyWith<$Res> {
-  factory $LoginEventCopyWith(
-          LoginEvent value, $Res Function(LoginEvent) then) =
-      _$LoginEventCopyWithImpl<$Res, LoginEvent>;
+abstract class $CreateUjianEventCopyWith<$Res> {
+  factory $CreateUjianEventCopyWith(
+          CreateUjianEvent value, $Res Function(CreateUjianEvent) then) =
+      _$CreateUjianEventCopyWithImpl<$Res, CreateUjianEvent>;
 }
 
 /// @nodoc
-class _$LoginEventCopyWithImpl<$Res, $Val extends LoginEvent>
-    implements $LoginEventCopyWith<$Res> {
-  _$LoginEventCopyWithImpl(this._value, this._then);
+class _$CreateUjianEventCopyWithImpl<$Res, $Val extends CreateUjianEvent>
+    implements $CreateUjianEventCopyWith<$Res> {
+  _$CreateUjianEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -83,7 +83,7 @@ abstract class _$$StartedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$StartedImplCopyWithImpl<$Res>
-    extends _$LoginEventCopyWithImpl<$Res, _$StartedImpl>
+    extends _$CreateUjianEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
   __$$StartedImplCopyWithImpl(
       _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
@@ -97,7 +97,7 @@ class _$StartedImpl implements _Started {
 
   @override
   String toString() {
-    return 'LoginEvent.started()';
+    return 'CreateUjianEvent.started()';
   }
 
   @override
@@ -113,7 +113,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(LoginRequestModel data) login,
+    required TResult Function() createUjian,
   }) {
     return started();
   }
@@ -122,7 +122,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(LoginRequestModel data)? login,
+    TResult? Function()? createUjian,
   }) {
     return started?.call();
   }
@@ -131,7 +131,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(LoginRequestModel data)? login,
+    TResult Function()? createUjian,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -144,7 +144,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Login value) login,
+    required TResult Function(_CreateUjian value) createUjian,
   }) {
     return started(this);
   }
@@ -153,7 +153,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Login value)? login,
+    TResult? Function(_CreateUjian value)? createUjian,
   }) {
     return started?.call(this);
   }
@@ -162,7 +162,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Login value)? login,
+    TResult Function(_CreateUjian value)? createUjian,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -172,98 +172,72 @@ class _$StartedImpl implements _Started {
   }
 }
 
-abstract class _Started implements LoginEvent {
+abstract class _Started implements CreateUjianEvent {
   const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$$LoginImplCopyWith<$Res> {
-  factory _$$LoginImplCopyWith(
-          _$LoginImpl value, $Res Function(_$LoginImpl) then) =
-      __$$LoginImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({LoginRequestModel data});
+abstract class _$$CreateUjianImplCopyWith<$Res> {
+  factory _$$CreateUjianImplCopyWith(
+          _$CreateUjianImpl value, $Res Function(_$CreateUjianImpl) then) =
+      __$$CreateUjianImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LoginImplCopyWithImpl<$Res>
-    extends _$LoginEventCopyWithImpl<$Res, _$LoginImpl>
-    implements _$$LoginImplCopyWith<$Res> {
-  __$$LoginImplCopyWithImpl(
-      _$LoginImpl _value, $Res Function(_$LoginImpl) _then)
+class __$$CreateUjianImplCopyWithImpl<$Res>
+    extends _$CreateUjianEventCopyWithImpl<$Res, _$CreateUjianImpl>
+    implements _$$CreateUjianImplCopyWith<$Res> {
+  __$$CreateUjianImplCopyWithImpl(
+      _$CreateUjianImpl _value, $Res Function(_$CreateUjianImpl) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? data = null,
-  }) {
-    return _then(_$LoginImpl(
-      null == data
-          ? _value.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as LoginRequestModel,
-    ));
-  }
 }
 
 /// @nodoc
 
-class _$LoginImpl implements _Login {
-  const _$LoginImpl(this.data);
-
-  @override
-  final LoginRequestModel data;
+class _$CreateUjianImpl implements _CreateUjian {
+  const _$CreateUjianImpl();
 
   @override
   String toString() {
-    return 'LoginEvent.login(data: $data)';
+    return 'CreateUjianEvent.createUjian()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$LoginImpl &&
-            (identical(other.data, data) || other.data == data));
+        (other.runtimeType == runtimeType && other is _$CreateUjianImpl);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, data);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
-      __$$LoginImplCopyWithImpl<_$LoginImpl>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(LoginRequestModel data) login,
+    required TResult Function() createUjian,
   }) {
-    return login(data);
+    return createUjian();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(LoginRequestModel data)? login,
+    TResult? Function()? createUjian,
   }) {
-    return login?.call(data);
+    return createUjian?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(LoginRequestModel data)? login,
+    TResult Function()? createUjian,
     required TResult orElse(),
   }) {
-    if (login != null) {
-      return login(data);
+    if (createUjian != null) {
+      return createUjian();
     }
     return orElse();
   }
@@ -272,50 +246,45 @@ class _$LoginImpl implements _Login {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Login value) login,
+    required TResult Function(_CreateUjian value) createUjian,
   }) {
-    return login(this);
+    return createUjian(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Login value)? login,
+    TResult? Function(_CreateUjian value)? createUjian,
   }) {
-    return login?.call(this);
+    return createUjian?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Login value)? login,
+    TResult Function(_CreateUjian value)? createUjian,
     required TResult orElse(),
   }) {
-    if (login != null) {
-      return login(this);
+    if (createUjian != null) {
+      return createUjian(this);
     }
     return orElse();
   }
 }
 
-abstract class _Login implements LoginEvent {
-  const factory _Login(final LoginRequestModel data) = _$LoginImpl;
-
-  LoginRequestModel get data;
-  @JsonKey(ignore: true)
-  _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+abstract class _CreateUjian implements CreateUjianEvent {
+  const factory _CreateUjian() = _$CreateUjianImpl;
 }
 
 /// @nodoc
-mixin _$LoginState {
+mixin _$CreateUjianState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
   }) =>
       throw _privateConstructorUsedError;
@@ -323,7 +292,7 @@ mixin _$LoginState {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
   }) =>
       throw _privateConstructorUsedError;
@@ -331,7 +300,7 @@ mixin _$LoginState {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
     required TResult orElse(),
   }) =>
@@ -364,16 +333,16 @@ mixin _$LoginState {
 }
 
 /// @nodoc
-abstract class $LoginStateCopyWith<$Res> {
-  factory $LoginStateCopyWith(
-          LoginState value, $Res Function(LoginState) then) =
-      _$LoginStateCopyWithImpl<$Res, LoginState>;
+abstract class $CreateUjianStateCopyWith<$Res> {
+  factory $CreateUjianStateCopyWith(
+          CreateUjianState value, $Res Function(CreateUjianState) then) =
+      _$CreateUjianStateCopyWithImpl<$Res, CreateUjianState>;
 }
 
 /// @nodoc
-class _$LoginStateCopyWithImpl<$Res, $Val extends LoginState>
-    implements $LoginStateCopyWith<$Res> {
-  _$LoginStateCopyWithImpl(this._value, this._then);
+class _$CreateUjianStateCopyWithImpl<$Res, $Val extends CreateUjianState>
+    implements $CreateUjianStateCopyWith<$Res> {
+  _$CreateUjianStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -390,7 +359,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$CreateUjianStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -404,7 +373,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'LoginState.initial()';
+    return 'CreateUjianState.initial()';
   }
 
   @override
@@ -421,7 +390,7 @@ class _$InitialImpl implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
   }) {
     return initial();
@@ -432,7 +401,7 @@ class _$InitialImpl implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
   }) {
     return initial?.call();
@@ -443,7 +412,7 @@ class _$InitialImpl implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
     required TResult orElse(),
   }) {
@@ -491,7 +460,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements LoginState {
+abstract class _Initial implements CreateUjianState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -504,7 +473,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$CreateUjianStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -518,7 +487,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'LoginState.loading()';
+    return 'CreateUjianState.loading()';
   }
 
   @override
@@ -535,7 +504,7 @@ class _$LoadingImpl implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
   }) {
     return loading();
@@ -546,7 +515,7 @@ class _$LoadingImpl implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
   }) {
     return loading?.call();
@@ -557,7 +526,7 @@ class _$LoadingImpl implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
     required TResult orElse(),
   }) {
@@ -605,7 +574,7 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements LoginState {
+abstract class _Loading implements CreateUjianState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -614,72 +583,45 @@ abstract class _$$SuccessImplCopyWith<$Res> {
   factory _$$SuccessImplCopyWith(
           _$SuccessImpl value, $Res Function(_$SuccessImpl) then) =
       __$$SuccessImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({AuthResponseModel authResponseModel});
 }
 
 /// @nodoc
 class __$$SuccessImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$SuccessImpl>
+    extends _$CreateUjianStateCopyWithImpl<$Res, _$SuccessImpl>
     implements _$$SuccessImplCopyWith<$Res> {
   __$$SuccessImplCopyWithImpl(
       _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? authResponseModel = null,
-  }) {
-    return _then(_$SuccessImpl(
-      null == authResponseModel
-          ? _value.authResponseModel
-          : authResponseModel // ignore: cast_nullable_to_non_nullable
-              as AuthResponseModel,
-    ));
-  }
 }
 
 /// @nodoc
 
 class _$SuccessImpl implements _Success {
-  const _$SuccessImpl(this.authResponseModel);
-
-  @override
-  final AuthResponseModel authResponseModel;
+  const _$SuccessImpl();
 
   @override
   String toString() {
-    return 'LoginState.success(authResponseModel: $authResponseModel)';
+    return 'CreateUjianState.success()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SuccessImpl &&
-            (identical(other.authResponseModel, authResponseModel) ||
-                other.authResponseModel == authResponseModel));
+        (other.runtimeType == runtimeType && other is _$SuccessImpl);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, authResponseModel);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
-      __$$SuccessImplCopyWithImpl<_$SuccessImpl>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
   }) {
-    return success(authResponseModel);
+    return success();
   }
 
   @override
@@ -687,10 +629,10 @@ class _$SuccessImpl implements _Success {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
   }) {
-    return success?.call(authResponseModel);
+    return success?.call();
   }
 
   @override
@@ -698,12 +640,12 @@ class _$SuccessImpl implements _Success {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
     required TResult orElse(),
   }) {
     if (success != null) {
-      return success(authResponseModel);
+      return success();
     }
     return orElse();
   }
@@ -746,14 +688,8 @@ class _$SuccessImpl implements _Success {
   }
 }
 
-abstract class _Success implements LoginState {
-  const factory _Success(final AuthResponseModel authResponseModel) =
-      _$SuccessImpl;
-
-  AuthResponseModel get authResponseModel;
-  @JsonKey(ignore: true)
-  _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+abstract class _Success implements CreateUjianState {
+  const factory _Success() = _$SuccessImpl;
 }
 
 /// @nodoc
@@ -767,7 +703,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$CreateUjianStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -797,7 +733,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'LoginState.error(message: $message)';
+    return 'CreateUjianState.error(message: $message)';
   }
 
   @override
@@ -822,7 +758,7 @@ class _$ErrorImpl implements _Error {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel authResponseModel) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
   }) {
     return error(message);
@@ -833,7 +769,7 @@ class _$ErrorImpl implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel authResponseModel)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
   }) {
     return error?.call(message);
@@ -844,7 +780,7 @@ class _$ErrorImpl implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel authResponseModel)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
     required TResult orElse(),
   }) {
@@ -892,7 +828,7 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements LoginState {
+abstract class _Error implements CreateUjianState {
   const factory _Error(final String message) = _$ErrorImpl;
 
   String get message;
