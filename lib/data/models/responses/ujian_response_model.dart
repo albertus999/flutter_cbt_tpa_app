@@ -5,8 +5,8 @@ class UjianResponseModel {
     final String message;
     //timer
   final int timer;
-  final List<Ujian> data;
-    // final List<Ujian> data;
+  final List<Soal> data;
+    // final List<Soal> data;
 
     UjianResponseModel({
         required this.message,
@@ -21,7 +21,7 @@ class UjianResponseModel {
     factory UjianResponseModel.fromMap(Map<String, dynamic> json) => UjianResponseModel(
         message: json["message"],
         timer: json["timer"] ?? 0,
-        data: List<Ujian>.from(json["data"].map((x) => Ujian.fromMap(x))),
+        data: List<Soal>.from(json["data"].map((x) => Soal.fromMap(x))),
     );
 
     Map<String, dynamic> toMap() => {
@@ -30,7 +30,7 @@ class UjianResponseModel {
     };
 }
 
-class Ujian {
+class Soal {
     final int id;
     final String pertanyaan;
     final String kategori;
@@ -39,7 +39,7 @@ class Ujian {
     final String jawabanC;
     final String jawabanD;
 
-    Ujian({
+    Soal({
         required this.id,
         required this.pertanyaan,
         required this.kategori,
@@ -49,11 +49,11 @@ class Ujian {
         required this.jawabanD,
     });
 
-    factory Ujian.fromJson(String str) => Ujian.fromMap(json.decode(str));
+    factory Soal.fromJson(String str) => Soal.fromMap(json.decode(str));
 
     String toJson() => json.encode(toMap());
 
-    factory Ujian.fromMap(Map<String, dynamic> json) => Ujian(
+    factory Soal.fromMap(Map<String, dynamic> json) => Soal(
         id: json["id"],
         pertanyaan: json["pertanyaan"],
         kategori: json["kategori"],

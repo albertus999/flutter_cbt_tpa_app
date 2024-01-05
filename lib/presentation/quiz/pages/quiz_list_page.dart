@@ -39,15 +39,6 @@ class _QuizListPageState extends State<QuizListPage> {
       ),
       QuizModel(
         image: Assets.images.quizCategory.path,
-        name: 'Tes Logika',
-        type: 'Multiple Choice',
-        description:
-            'Tes logika adalah metode evaluasi yang digunakan untuk mengukur kemampuan seseorang dalam berpikir secara logis, analitis, dan rasional',
-        duration: 30,
-        kategori: 'Logika',
-      ),
-      QuizModel(
-        image: Assets.images.quizCategory.path,
         name: 'Tes Verbal',
         type: 'Multiple Choice',
         description:
@@ -55,6 +46,16 @@ class _QuizListPageState extends State<QuizListPage> {
         duration: 30,
         kategori: 'Verbal',
       ),
+      QuizModel(
+        image: Assets.images.quizCategory.path,
+        name: 'Tes Logika',
+        type: 'Multiple Choice',
+        description:
+            'Tes logika adalah metode evaluasi yang digunakan untuk mengukur kemampuan seseorang dalam berpikir secara logis, analitis, dan rasional',
+        duration: 30,
+        kategori: 'Logika',
+      ),
+      
     ];
 
     return CustomScaffold(

@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
           const HeaderHome(),
           const SizedBox(height: 24.0),
           TitleSection(
-            title: 'Beranda',
+            title: 'Dashboard',
             onSeeAllTap: () {},
           ),
           const SizedBox(height: 16.0),

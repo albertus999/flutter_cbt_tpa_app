@@ -36,7 +36,7 @@ class ProfilePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Halo, Saiful Bahri',
+                  'Halo, Admin Al Arifin',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -44,7 +44,7 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '@codewithbahri',
+                  'al.arifin@fic10.com',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 12,

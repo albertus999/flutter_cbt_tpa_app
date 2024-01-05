@@ -46,7 +46,7 @@ class _HeaderHomeState extends State<HeaderHome> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      'Halo,',
+                      'Hello,',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,

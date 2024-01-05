@@ -50,7 +50,7 @@ class QuizResultPage extends StatelessWidget {
     ];
 
     return CustomScaffold(
-      appBarTitle: const Text('Hasil Tes'),
+      appBarTitle: const Text('Test Result'),
       body: ListView(
         children: [
           const SizedBox(height: 30.0),
@@ -96,7 +96,7 @@ class QuizResultPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Button.filled(
           onPressed: () => context.popToRoot(),
-          label: 'Kembali ke Beranda',
+          label: 'Back to Dashboard',
         ),
       ),
     );

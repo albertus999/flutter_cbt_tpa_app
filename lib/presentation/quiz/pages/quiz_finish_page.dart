@@ -56,14 +56,14 @@ class _QuizFinishPageState extends State<QuizFinishPage> {
               const SizedBox(height: 42.0),
               Button.filled(
                 onPressed: () => context.popToRoot(),
-                label: 'Kembali ke Beranda',
+                label: 'Back to Dashboard',
                 color: AppColors.white,
                 textColor: AppColors.primary,
               ),
               const SizedBox(height: 28.0),
               Button.filled(
                 onPressed: () => context.push(const QuizResultPage()),
-                label: 'Lihat Hasil',
+                label: 'See Result',
               ),
             ],
           ),

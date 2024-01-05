@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'ujian_by_kategori_bloc.dart';
+part of 'answer_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,59 +15,58 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$UjianByKategoriEvent {
+mixin _$AnswerEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(String kategori) getUjianByKategori,
+    required TResult Function(int soalId, String jawaban) setAnswer,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(String kategori)? getUjianByKategori,
+    TResult? Function(int soalId, String jawaban)? setAnswer,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(String kategori)? getUjianByKategori,
+    TResult Function(int soalId, String jawaban)? setAnswer,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetUjianByKategori value) getUjianByKategori,
+    required TResult Function(_SetAnswer value) setAnswer,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetUjianByKategori value)? getUjianByKategori,
+    TResult? Function(_SetAnswer value)? setAnswer,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetUjianByKategori value)? getUjianByKategori,
+    TResult Function(_SetAnswer value)? setAnswer,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $UjianByKategoriEventCopyWith<$Res> {
-  factory $UjianByKategoriEventCopyWith(UjianByKategoriEvent value,
-          $Res Function(UjianByKategoriEvent) then) =
-      _$UjianByKategoriEventCopyWithImpl<$Res, UjianByKategoriEvent>;
+abstract class $AnswerEventCopyWith<$Res> {
+  factory $AnswerEventCopyWith(
+          AnswerEvent value, $Res Function(AnswerEvent) then) =
+      _$AnswerEventCopyWithImpl<$Res, AnswerEvent>;
 }
 
 /// @nodoc
-class _$UjianByKategoriEventCopyWithImpl<$Res,
-        $Val extends UjianByKategoriEvent>
-    implements $UjianByKategoriEventCopyWith<$Res> {
-  _$UjianByKategoriEventCopyWithImpl(this._value, this._then);
+class _$AnswerEventCopyWithImpl<$Res, $Val extends AnswerEvent>
+    implements $AnswerEventCopyWith<$Res> {
+  _$AnswerEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -84,7 +83,7 @@ abstract class _$$StartedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$StartedImplCopyWithImpl<$Res>
-    extends _$UjianByKategoriEventCopyWithImpl<$Res, _$StartedImpl>
+    extends _$AnswerEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
   __$$StartedImplCopyWithImpl(
       _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
@@ -98,7 +97,7 @@ class _$StartedImpl implements _Started {
 
   @override
   String toString() {
-    return 'UjianByKategoriEvent.started()';
+    return 'AnswerEvent.started()';
   }
 
   @override
@@ -114,7 +113,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(String kategori) getUjianByKategori,
+    required TResult Function(int soalId, String jawaban) setAnswer,
   }) {
     return started();
   }
@@ -123,7 +122,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(String kategori)? getUjianByKategori,
+    TResult? Function(int soalId, String jawaban)? setAnswer,
   }) {
     return started?.call();
   }
@@ -132,7 +131,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(String kategori)? getUjianByKategori,
+    TResult Function(int soalId, String jawaban)? setAnswer,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -145,7 +144,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetUjianByKategori value) getUjianByKategori,
+    required TResult Function(_SetAnswer value) setAnswer,
   }) {
     return started(this);
   }
@@ -154,7 +153,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetUjianByKategori value)? getUjianByKategori,
+    TResult? Function(_SetAnswer value)? setAnswer,
   }) {
     return started?.call(this);
   }
@@ -163,7 +162,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetUjianByKategori value)? getUjianByKategori,
+    TResult Function(_SetAnswer value)? setAnswer,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -173,36 +172,41 @@ class _$StartedImpl implements _Started {
   }
 }
 
-abstract class _Started implements UjianByKategoriEvent {
+abstract class _Started implements AnswerEvent {
   const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$$GetUjianByKategoriImplCopyWith<$Res> {
-  factory _$$GetUjianByKategoriImplCopyWith(_$GetUjianByKategoriImpl value,
-          $Res Function(_$GetUjianByKategoriImpl) then) =
-      __$$GetUjianByKategoriImplCopyWithImpl<$Res>;
+abstract class _$$SetAnswerImplCopyWith<$Res> {
+  factory _$$SetAnswerImplCopyWith(
+          _$SetAnswerImpl value, $Res Function(_$SetAnswerImpl) then) =
+      __$$SetAnswerImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({String kategori});
+  $Res call({int soalId, String jawaban});
 }
 
 /// @nodoc
-class __$$GetUjianByKategoriImplCopyWithImpl<$Res>
-    extends _$UjianByKategoriEventCopyWithImpl<$Res, _$GetUjianByKategoriImpl>
-    implements _$$GetUjianByKategoriImplCopyWith<$Res> {
-  __$$GetUjianByKategoriImplCopyWithImpl(_$GetUjianByKategoriImpl _value,
-      $Res Function(_$GetUjianByKategoriImpl) _then)
+class __$$SetAnswerImplCopyWithImpl<$Res>
+    extends _$AnswerEventCopyWithImpl<$Res, _$SetAnswerImpl>
+    implements _$$SetAnswerImplCopyWith<$Res> {
+  __$$SetAnswerImplCopyWithImpl(
+      _$SetAnswerImpl _value, $Res Function(_$SetAnswerImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? kategori = null,
+    Object? soalId = null,
+    Object? jawaban = null,
   }) {
-    return _then(_$GetUjianByKategoriImpl(
-      null == kategori
-          ? _value.kategori
-          : kategori // ignore: cast_nullable_to_non_nullable
+    return _then(_$SetAnswerImpl(
+      null == soalId
+          ? _value.soalId
+          : soalId // ignore: cast_nullable_to_non_nullable
+              as int,
+      null == jawaban
+          ? _value.jawaban
+          : jawaban // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -210,63 +214,64 @@ class __$$GetUjianByKategoriImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$GetUjianByKategoriImpl implements _GetUjianByKategori {
-  const _$GetUjianByKategoriImpl(this.kategori);
+class _$SetAnswerImpl implements _SetAnswer {
+  const _$SetAnswerImpl(this.soalId, this.jawaban);
 
   @override
-  final String kategori;
+  final int soalId;
+  @override
+  final String jawaban;
 
   @override
   String toString() {
-    return 'UjianByKategoriEvent.getUjianByKategori(kategori: $kategori)';
+    return 'AnswerEvent.setAnswer(soalId: $soalId, jawaban: $jawaban)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetUjianByKategoriImpl &&
-            (identical(other.kategori, kategori) ||
-                other.kategori == kategori));
+            other is _$SetAnswerImpl &&
+            (identical(other.soalId, soalId) || other.soalId == soalId) &&
+            (identical(other.jawaban, jawaban) || other.jawaban == jawaban));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, kategori);
+  int get hashCode => Object.hash(runtimeType, soalId, jawaban);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetUjianByKategoriImplCopyWith<_$GetUjianByKategoriImpl> get copyWith =>
-      __$$GetUjianByKategoriImplCopyWithImpl<_$GetUjianByKategoriImpl>(
-          this, _$identity);
+  _$$SetAnswerImplCopyWith<_$SetAnswerImpl> get copyWith =>
+      __$$SetAnswerImplCopyWithImpl<_$SetAnswerImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(String kategori) getUjianByKategori,
+    required TResult Function(int soalId, String jawaban) setAnswer,
   }) {
-    return getUjianByKategori(kategori);
+    return setAnswer(soalId, jawaban);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(String kategori)? getUjianByKategori,
+    TResult? Function(int soalId, String jawaban)? setAnswer,
   }) {
-    return getUjianByKategori?.call(kategori);
+    return setAnswer?.call(soalId, jawaban);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(String kategori)? getUjianByKategori,
+    TResult Function(int soalId, String jawaban)? setAnswer,
     required TResult orElse(),
   }) {
-    if (getUjianByKategori != null) {
-      return getUjianByKategori(kategori);
+    if (setAnswer != null) {
+      return setAnswer(soalId, jawaban);
     }
     return orElse();
   }
@@ -275,71 +280,69 @@ class _$GetUjianByKategoriImpl implements _GetUjianByKategori {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetUjianByKategori value) getUjianByKategori,
+    required TResult Function(_SetAnswer value) setAnswer,
   }) {
-    return getUjianByKategori(this);
+    return setAnswer(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetUjianByKategori value)? getUjianByKategori,
+    TResult? Function(_SetAnswer value)? setAnswer,
   }) {
-    return getUjianByKategori?.call(this);
+    return setAnswer?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetUjianByKategori value)? getUjianByKategori,
+    TResult Function(_SetAnswer value)? setAnswer,
     required TResult orElse(),
   }) {
-    if (getUjianByKategori != null) {
-      return getUjianByKategori(this);
+    if (setAnswer != null) {
+      return setAnswer(this);
     }
     return orElse();
   }
 }
 
-abstract class _GetUjianByKategori implements UjianByKategoriEvent {
-  const factory _GetUjianByKategori(final String kategori) =
-      _$GetUjianByKategoriImpl;
+abstract class _SetAnswer implements AnswerEvent {
+  const factory _SetAnswer(final int soalId, final String jawaban) =
+      _$SetAnswerImpl;
 
-  String get kategori;
+  int get soalId;
+  String get jawaban;
   @JsonKey(ignore: true)
-  _$$GetUjianByKategoriImplCopyWith<_$GetUjianByKategoriImpl> get copyWith =>
+  _$$SetAnswerImplCopyWith<_$SetAnswerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$UjianByKategoriState {
+mixin _$AnswerState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(UjianResponseModel response) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function() notfound,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(UjianResponseModel response)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function()? notfound,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(UjianResponseModel response)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function()? notfound,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -349,7 +352,6 @@ mixin _$UjianByKategoriState {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Notfound value) notfound,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -358,7 +360,6 @@ mixin _$UjianByKategoriState {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Notfound value)? notfound,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -367,24 +368,22 @@ mixin _$UjianByKategoriState {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $UjianByKategoriStateCopyWith<$Res> {
-  factory $UjianByKategoriStateCopyWith(UjianByKategoriState value,
-          $Res Function(UjianByKategoriState) then) =
-      _$UjianByKategoriStateCopyWithImpl<$Res, UjianByKategoriState>;
+abstract class $AnswerStateCopyWith<$Res> {
+  factory $AnswerStateCopyWith(
+          AnswerState value, $Res Function(AnswerState) then) =
+      _$AnswerStateCopyWithImpl<$Res, AnswerState>;
 }
 
 /// @nodoc
-class _$UjianByKategoriStateCopyWithImpl<$Res,
-        $Val extends UjianByKategoriState>
-    implements $UjianByKategoriStateCopyWith<$Res> {
-  _$UjianByKategoriStateCopyWithImpl(this._value, this._then);
+class _$AnswerStateCopyWithImpl<$Res, $Val extends AnswerState>
+    implements $AnswerStateCopyWith<$Res> {
+  _$AnswerStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -401,7 +400,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$AnswerStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -415,7 +414,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'UjianByKategoriState.initial()';
+    return 'AnswerState.initial()';
   }
 
   @override
@@ -432,9 +431,8 @@ class _$InitialImpl implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(UjianResponseModel response) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function() notfound,
   }) {
     return initial();
   }
@@ -444,9 +442,8 @@ class _$InitialImpl implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(UjianResponseModel response)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function()? notfound,
   }) {
     return initial?.call();
   }
@@ -456,9 +453,8 @@ class _$InitialImpl implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(UjianResponseModel response)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function()? notfound,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -474,7 +470,6 @@ class _$InitialImpl implements _Initial {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Notfound value) notfound,
   }) {
     return initial(this);
   }
@@ -486,7 +481,6 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Notfound value)? notfound,
   }) {
     return initial?.call(this);
   }
@@ -498,7 +492,6 @@ class _$InitialImpl implements _Initial {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -508,7 +501,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements UjianByKategoriState {
+abstract class _Initial implements AnswerState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -521,7 +514,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$AnswerStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -535,7 +528,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'UjianByKategoriState.loading()';
+    return 'AnswerState.loading()';
   }
 
   @override
@@ -552,9 +545,8 @@ class _$LoadingImpl implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(UjianResponseModel response) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function() notfound,
   }) {
     return loading();
   }
@@ -564,9 +556,8 @@ class _$LoadingImpl implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(UjianResponseModel response)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function()? notfound,
   }) {
     return loading?.call();
   }
@@ -576,9 +567,8 @@ class _$LoadingImpl implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(UjianResponseModel response)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function()? notfound,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -594,7 +584,6 @@ class _$LoadingImpl implements _Loading {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Notfound value) notfound,
   }) {
     return loading(this);
   }
@@ -606,7 +595,6 @@ class _$LoadingImpl implements _Loading {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Notfound value)? notfound,
   }) {
     return loading?.call(this);
   }
@@ -618,7 +606,6 @@ class _$LoadingImpl implements _Loading {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -628,7 +615,7 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements UjianByKategoriState {
+abstract class _Loading implements AnswerState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -637,73 +624,45 @@ abstract class _$$SuccessImplCopyWith<$Res> {
   factory _$$SuccessImplCopyWith(
           _$SuccessImpl value, $Res Function(_$SuccessImpl) then) =
       __$$SuccessImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({UjianResponseModel response});
 }
 
 /// @nodoc
 class __$$SuccessImplCopyWithImpl<$Res>
-    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$SuccessImpl>
+    extends _$AnswerStateCopyWithImpl<$Res, _$SuccessImpl>
     implements _$$SuccessImplCopyWith<$Res> {
   __$$SuccessImplCopyWithImpl(
       _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? response = null,
-  }) {
-    return _then(_$SuccessImpl(
-      null == response
-          ? _value.response
-          : response // ignore: cast_nullable_to_non_nullable
-              as UjianResponseModel,
-    ));
-  }
 }
 
 /// @nodoc
 
 class _$SuccessImpl implements _Success {
-  const _$SuccessImpl(this.response);
-
-  @override
-  final UjianResponseModel response;
+  const _$SuccessImpl();
 
   @override
   String toString() {
-    return 'UjianByKategoriState.success(response: $response)';
+    return 'AnswerState.success()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SuccessImpl &&
-            (identical(other.response, response) ||
-                other.response == response));
+        (other.runtimeType == runtimeType && other is _$SuccessImpl);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, response);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
-      __$$SuccessImplCopyWithImpl<_$SuccessImpl>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(UjianResponseModel response) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function() notfound,
   }) {
-    return success(response);
+    return success();
   }
 
   @override
@@ -711,11 +670,10 @@ class _$SuccessImpl implements _Success {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(UjianResponseModel response)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function()? notfound,
   }) {
-    return success?.call(response);
+    return success?.call();
   }
 
   @override
@@ -723,13 +681,12 @@ class _$SuccessImpl implements _Success {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(UjianResponseModel response)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function()? notfound,
     required TResult orElse(),
   }) {
     if (success != null) {
-      return success(response);
+      return success();
     }
     return orElse();
   }
@@ -741,7 +698,6 @@ class _$SuccessImpl implements _Success {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Notfound value) notfound,
   }) {
     return success(this);
   }
@@ -753,7 +709,6 @@ class _$SuccessImpl implements _Success {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Notfound value)? notfound,
   }) {
     return success?.call(this);
   }
@@ -765,7 +720,6 @@ class _$SuccessImpl implements _Success {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -775,13 +729,8 @@ class _$SuccessImpl implements _Success {
   }
 }
 
-abstract class _Success implements UjianByKategoriState {
-  const factory _Success(final UjianResponseModel response) = _$SuccessImpl;
-
-  UjianResponseModel get response;
-  @JsonKey(ignore: true)
-  _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+abstract class _Success implements AnswerState {
+  const factory _Success() = _$SuccessImpl;
 }
 
 /// @nodoc
@@ -795,7 +744,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$AnswerStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -825,7 +774,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'UjianByKategoriState.error(message: $message)';
+    return 'AnswerState.error(message: $message)';
   }
 
   @override
@@ -850,9 +799,8 @@ class _$ErrorImpl implements _Error {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(UjianResponseModel response) success,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function() notfound,
   }) {
     return error(message);
   }
@@ -862,9 +810,8 @@ class _$ErrorImpl implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(UjianResponseModel response)? success,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function()? notfound,
   }) {
     return error?.call(message);
   }
@@ -874,9 +821,8 @@ class _$ErrorImpl implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(UjianResponseModel response)? success,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function()? notfound,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -892,7 +838,6 @@ class _$ErrorImpl implements _Error {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Notfound value) notfound,
   }) {
     return error(this);
   }
@@ -904,7 +849,6 @@ class _$ErrorImpl implements _Error {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Notfound value)? notfound,
   }) {
     return error?.call(this);
   }
@@ -916,7 +860,6 @@ class _$ErrorImpl implements _Error {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Notfound value)? notfound,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -926,131 +869,11 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements UjianByKategoriState {
+abstract class _Error implements AnswerState {
   const factory _Error(final String message) = _$ErrorImpl;
 
   String get message;
   @JsonKey(ignore: true)
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$NotfoundImplCopyWith<$Res> {
-  factory _$$NotfoundImplCopyWith(
-          _$NotfoundImpl value, $Res Function(_$NotfoundImpl) then) =
-      __$$NotfoundImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$NotfoundImplCopyWithImpl<$Res>
-    extends _$UjianByKategoriStateCopyWithImpl<$Res, _$NotfoundImpl>
-    implements _$$NotfoundImplCopyWith<$Res> {
-  __$$NotfoundImplCopyWithImpl(
-      _$NotfoundImpl _value, $Res Function(_$NotfoundImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$NotfoundImpl implements _Notfound {
-  const _$NotfoundImpl();
-
-  @override
-  String toString() {
-    return 'UjianByKategoriState.notfound()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$NotfoundImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(UjianResponseModel response) success,
-    required TResult Function(String message) error,
-    required TResult Function() notfound,
-  }) {
-    return notfound();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(UjianResponseModel response)? success,
-    TResult? Function(String message)? error,
-    TResult? Function()? notfound,
-  }) {
-    return notfound?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(UjianResponseModel response)? success,
-    TResult Function(String message)? error,
-    TResult Function()? notfound,
-    required TResult orElse(),
-  }) {
-    if (notfound != null) {
-      return notfound();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(_Loading value) loading,
-    required TResult Function(_Success value) success,
-    required TResult Function(_Error value) error,
-    required TResult Function(_Notfound value) notfound,
-  }) {
-    return notfound(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(_Loading value)? loading,
-    TResult? Function(_Success value)? success,
-    TResult? Function(_Error value)? error,
-    TResult? Function(_Notfound value)? notfound,
-  }) {
-    return notfound?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Success value)? success,
-    TResult Function(_Error value)? error,
-    TResult Function(_Notfound value)? notfound,
-    required TResult orElse(),
-  }) {
-    if (notfound != null) {
-      return notfound(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _Notfound implements UjianByKategoriState {
-  const factory _Notfound() = _$NotfoundImpl;
 }

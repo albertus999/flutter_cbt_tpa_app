@@ -16,7 +16,7 @@ class QuizResultLast extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Hasil Tes Terakhir',
+          'Final Test Result',
           style: TextStyle(
             fontSize: 21,
             fontWeight: FontWeight.w500,
